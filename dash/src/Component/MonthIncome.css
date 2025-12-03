@@ -1,0 +1,9 @@
+
+
+.textincome{
+    display: flex;
+    gap: 50%;
+    margin-left: 8%;
+    font-size: 1.5vw;
+    margin-top: -5%;
+}

@@ -1,0 +1,74 @@
+
+.card-one{
+   
+width: 25%;
+   background-color: #F5B14F;
+   border-radius: 2rem;
+   display: flex;
+   align-items: center;
+   gap: 15%;
+   border: 2px solid #570D1B;
+    
+}
+
+.cards-titles{
+    font-size: 2.5vw;
+    padding: 1%;
+    padding-left: 8%;
+    color: #570D1B;
+
+}
+
+
+.card-btn{
+  font-family: thunky;
+  font-size: 1.7vw;
+  background-color: #570D1B;
+  color: #FFECD2;
+  padding: 1%;
+  padding-left:  5%;
+  padding-right: 5% ; 
+  border: transparent;
+  border-radius: 1rem;
+
+}
+
+
+.card-btn:hover{
+    color: #570D1B;
+    background-color: #FFECD2;
+    margin-top: -1%;
+
+}
+
+.btn-div{
+    display: flex;
+    gap: 15%;
+    margin: 5%;
+    margin-top: -10%;
+}
+
+.card-two{
+   width: 30%;
+    background-color: #F5B14F;
+    border: 2px solid #570D1B;
+    border-radius: 2rem;
+    
+}
+
+.two-cards{
+    display: flex;
+    align-items: center;  
+    gap: 10%; 
+    margin-left: 20%;
+}
+
+.income{
+    margin-left: 20%;
+    background-color: #F5B14F;
+    width: 52%;
+    margin-top: 2%;
+    border-radius: 2rem;
+    border: 2px solid #570D1B;
+
+}
