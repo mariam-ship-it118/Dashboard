@@ -1,0 +1,31 @@
+
+.hiing{
+    display: flex;
+    align-items: center;
+    font-size: 2vw;
+    gap: 1%;
+    margin-left: 20%;
+}
+
+.yellow{
+    color: #F5B14F;
+}
+.red{
+    color: #570D1B;
+}
+
+
+.searchB{
+ padding: 1%;
+ padding-right: 5%;
+ border-radius: 1rem;
+ border: 2px solid #570D1B;
+ color: #570D1B;
+}
+
+
+.headingS{
+    display: flex;
+    gap: 35%;
+    align-items: center;
+}
