@@ -1,0 +1,43 @@
+
+
+@font-face {
+    font-family: thunky;
+    src: url(../Assets/Thunky\ DEMO.otf);
+}
+
+ h1, h2, h3, h4, h5{
+    font-family: thunky;
+    font-weight: 100;
+ }
+
+.loginT{
+    font-size: 10vw ;
+    text-align: center;
+    color: #570D1B;
+    padding-top: 5%;
+}
+
+
+body{
+    background-color: #FFECD2;
+    margin: 0;
+    padding: 0;
+}
+
+
+.bglogin{
+    background-image: url(../Assets/loginbg.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #F5B14F;
+    margin: 0;
+    margin-top: -8%;
+    padding: 0;
+    
+}
+
+.me{
+    margin-left: 30%;
+    margin-top: -5%;
+    width: 40%;
+}

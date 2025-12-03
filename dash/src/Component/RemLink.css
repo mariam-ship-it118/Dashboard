@@ -1,0 +1,47 @@
+input[type="checkbox"]:checked {
+  border-color: #F5B14F; /* Change border color when checked */
+  background-color: #e6f7ff; /* Optional: background color when checked */
+}
+
+input[type="checkbox"]:checked::after {
+  transform: translate(-50%, -50%) scale(1); /* Show checkmark */
+}
+
+.margleft{
+  margin-left: 64%;
+  font-size: 1.5vw;
+  color: #570D1B;
+}
+
+
+.loginbtn{
+  font-size: 2vw;
+  font-family: thunky;
+  background-color: #570D1B;
+  color: #FFECD2;
+  border: transparent;
+  padding: 0.5%;
+  padding-left:  10%;
+  padding-right: 10% ;
+  margin-left: 40%;
+  margin-bottom: 5%;
+}
+
+
+
+.loginbtn:hover{
+  font-size: 2.5vw;
+  font-family: thunky;
+  background-color: #FFECD2;
+  color: #570D1B;
+  margin-top: -0.5%;
+  transition: trandform;
+  transition-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transition-duration: 1000ms;
+ 
+}
+
+
+.test{
+  margin-top: 0%;
+}
