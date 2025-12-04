@@ -1,0 +1,41 @@
+.cardz-views{
+    background-color: #F5B14F;
+    color: #570D1B;
+    border: 2px solid #570D1B ;
+    border-radius: 2rem;
+    width: 30%;
+        height: 21vw;
+
+}
+
+.widdy{
+    width: 20%;
+}
+
+.felxayten{
+    display: flex;
+    gap: 5%;
+    align-items: baseline;
+    margin-top: -4%;
+    margin-left: 8%;
+    font-size: 3.5vw;
+    font-weight: 500;
+}
+
+
+
+
+.fsp{
+    font-size: 1.5vw;
+    padding-left: 8%;
+    margin-top: -3%;
+}
+
+
+
+.artistics{
+    display: flex;
+    gap: 2%;
+    margin-left: 20%;
+    margin-top: 3%;
+}
