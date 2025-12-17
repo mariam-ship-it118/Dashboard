@@ -1,3 +1,11 @@
+ @font-face {
+    font-family: poppins;
+    src: url(../Assets/Poppins-Medium.ttf);
+ }
+p{
+   font-family: poppins; 
+}
+
 
 .card-one{
    
@@ -21,7 +29,7 @@ width: 25%;
 
 
 .card-btn{
-  font-family: thunky;
+  font-family: poppins;
   font-size: 1.7vw;
   background-color: #570D1B;
   color: #FFECD2;
@@ -88,3 +96,5 @@ width: 25%;
     border-radius: 2rem;
     width: 33%;
 }
+
+

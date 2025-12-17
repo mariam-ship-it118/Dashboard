@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import './RemLink.css';
-
-
 const RemLinks = () => {
     return ( <>
  
@@ -12,8 +11,10 @@ const RemLinks = () => {
     
      
      <p className='margleft test'>forgot password?</p>
-    
+    <Link to='/home'>
     <button className='loginbtn'>Login</button>
+    
+    </Link>
     
     </> );
 }

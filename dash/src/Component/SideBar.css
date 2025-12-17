@@ -2,16 +2,29 @@ li{
     list-style-type: none;
 }
 
+body{
+    font-family: poppins;
+}
+
+h3{
+    font-family: poppins;
+}
 .iconsbar{
-    margin-top: 88%;
+    margin-top: 40%;
+    display: flex;
+    gap: 5%;
+    font-size: 1vw;
+    font-family: poppins;
+    color: #FFECD2;
 }
 
 .sidebarbg{
     background-color: #570D1B;
-    width: 10%;
+    width: 13%;
     height: 47vw;
     margin-top: -1%;
     position: fixed;
     
     border-radius: 0rem 5rem 5rem 0rem ;
 }
+
