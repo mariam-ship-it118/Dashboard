@@ -4,7 +4,7 @@ import {supabase} from '../Supabase';
 
 
    
-const ProfileInfo = () => {
+const Messages = () => {
 const [loading, setLoading] = useState(true);
 const[info, setInfo] = useState("");
  useEffect(() => {
@@ -23,35 +23,34 @@ const[info, setInfo] = useState("");
 
  if (loading) return <p>Loading...</p>;   
     return ( <>   
+      <table class="projects-table">
     
+    <thead>
+  
+    <tr>
+      <th>Sender</th>
+      <th>Content</th>
+      <th>Emails</th>
+     
+    </tr>
+  
+    </thead>
+  
+    <tbody>
     
     { info.map((info)=>{
-       return  <table class="projects-table">
-  <thead>
-
-  <tr>
-    <th>Sender</th>
-    <th>Content</th>
-    <th>Emails</th>
-    <th>Tool</th>
-  </tr>
-
-  </thead>
-
-  <tbody>
-
-  <tr>
-    <td>{info.Sender_Name}</td>
-    <td>{info.Message_Content}</td>
-    <td>{info.Clients_emails}</td>
+       return <tr>
+    <td>{info.UserName}</td>
+    <td>{info.Email}</td>
+    <td>{info.Password}</td>
+    <td>{info.PhoneNumber}</td>
    
   </tr>
+  } ) }
 
   </tbody>
  
 </table>
-  
-    }) }
     
    
     
@@ -68,4 +67,4 @@ const[info, setInfo] = useState("");
 
 
  
-export default ProfileInfo;
+export default Messages;

@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from 'react';
 import {supabase} from '../Supabase';
 import profilepic from '../Assets/profilepic.svg';  
-import ProfileTextBox from '../Component/ProfileTextBox';  
 import SideBar from '../Component/SideBar';  
 import './ProjectTable.css';   
+import ProfileInfo from '../Component/ProfileSection';
    
 const ProfileP = () => {    
     return ( <>    
@@ -16,7 +16,7 @@ const ProfileP = () => {
     <img src={profilepic} alt="graphic designer" />
     
     
-    <ProfileTextBox/>
+    <ProfileInfo/>
 
 </section>
     

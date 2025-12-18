@@ -6,6 +6,8 @@ import HomeDash from './Pages/HomeDash';
 import TestApi from './Pages/TestApi';
 import ProjectsPage from './Pages/ProjectsPage';
 import ProfileP from './Pages/Profile';
+import SubMsgs from './Pages/SubMesgs';
+import MsgsPage from './Pages/Msgs';
 
 
 const RoutingApp = () => {
@@ -22,7 +24,9 @@ const RoutingApp = () => {
 
 <Route path='/profile' element={<ProfileP/>}/>
 
+<Route path='/dmsg' element={<SubMsgs/>} />
 
+ <Route path='/messages' element={<MsgsPage/>} />
 
         </Routes>
         
