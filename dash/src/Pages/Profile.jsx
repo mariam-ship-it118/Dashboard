@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+
+import React, { useEffect, useState } from 'react';
+import {supabase} from '../Supabase';
 import profilepic from '../Assets/profilepic.svg';  
 import ProfileTextBox from '../Component/ProfileTextBox';  
 import SideBar from '../Component/SideBar';  

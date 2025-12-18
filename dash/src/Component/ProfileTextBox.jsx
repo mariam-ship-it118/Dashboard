@@ -1,39 +1,71 @@
-import React, { Component } from 'react';
+
+import React, { useEffect, useState } from 'react';
+import {supabase} from '../Supabase';
 
 
-const ProfileTextBox = () => {
-    return ( 
-        <>
-        <h2>UserName</h2>
-        <input type="text" />
-
-
-
-       <h2>Email</h2>
-       <input type="text" />
-
-       <h2>Password</h2>
-       <input type="password" />
-
-
-       <h2>Phone Number</h2>
-       <input type="text" />
-  
-<br />
-  <button className='btnsave'>Save</button>
-
-
-
-
-
+   
+const ProfileInfo = () => {
+const [loading, setLoading] = useState(true);
+const[info, setInfo] = useState("");
+ useEffect(() => {
+    
+     async function getAllProjectsAPI() {
+         const res = await supabase.from("Messages").select("*");
+         setInfo(res.data);   
+         setLoading(false);  
+        console.log(res);
         
-        
-        
-        
-        
-        
-        </>
-     );
-}
+    }  
+    getAllProjectsAPI(); 
+ },[]);   
+       
+    
+
+ if (loading) return <p>Loading...</p>;   
+    return ( <>   
+    
+    
+    { info.map((info)=>{
+       return  <table class="projects-table">
+  <thead>
+
+  <tr>
+    <th>Sender</th>
+    <th>Content</th>
+    <th>Emails</th>
+    <th>Tool</th>
+  </tr>
+
+  </thead>
+
+  <tbody>
+
+  <tr>
+    <td>{info.Sender_Name}</td>
+    <td>{info.Message_Content}</td>
+    <td>{info.Clients_emails}</td>
+   
+  </tr>
+
+  </tbody>
  
-export default ProfileTextBox;
+</table>
+  
+    }) }
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </> );
+}
+
+
+ 
+export default ProfileInfo;
