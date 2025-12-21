@@ -22,6 +22,31 @@ h2{
     font-size: 1vw;
 }
 
+.lavie{
+  margin-left: 15%;
+  padding: 1%;
+  font-family: poppins;
+  border: transparent;
+  color: #FFECD2;
+  background-color: #570D1B;
+  border-radius: 1rem;
+  transform: scale(1);
+  margin-top: 2%;
+}
+
+
+.lavie:hover{
+  margin-left: 15%;
+  padding: 1%;
+  font-family: poppins;
+  border: 2px solid #570D1B;
+  color: #570D1B;
+  transform: scale(1.01);
+  transition-duration: 800ms;
+  background-color: transparent;
+}
+
+
 .btnsave{
     padding: 0.5%;
     margin-top: 1%;

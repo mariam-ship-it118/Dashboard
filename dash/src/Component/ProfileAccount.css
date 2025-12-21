@@ -1,0 +1,15 @@
+.formAccount{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 2%;
+}
+
+.btnacc{
+    margin-top: 1%;
+    background-color: #570D1B;
+    color: #FFECD2;
+    font-family:poppins ;
+    border: transparent;
+    padding: 1%;
+}

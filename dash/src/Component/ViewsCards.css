@@ -1,5 +1,5 @@
 .cardz-views{
-    background-color: #F5B14F;
+    
     color: #570D1B;
     border: 2px solid #570D1B ;
     border-radius: 2rem;
@@ -36,6 +36,6 @@
 .artistics{
     display: flex;
     gap: 2%;
-    margin-left: 20%;
+    margin-left: 15%;
     margin-top: 3%;
 }

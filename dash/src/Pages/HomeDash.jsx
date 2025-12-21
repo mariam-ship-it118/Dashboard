@@ -36,16 +36,10 @@ const HomeDash = () => {
  <section className='income'>
    <h3 className='cards-titles'>Monthly income</h3>
 
- <MonthIncome month='November' salary='20,000' />
+ <MonthIncome />
 
   
-   <MonthIncome month='November' salary='50,000' />
-<MonthIncome month='October' salary='20,000' />
-
-<MonthIncome month='September' salary='70,000' />
-<MonthIncome month='August' salary='100,000' />
-
-
+   
 
 
 

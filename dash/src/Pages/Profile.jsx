@@ -5,6 +5,7 @@ import profilepic from '../Assets/profilepic.svg';
 import SideBar from '../Component/SideBar';  
 import './ProjectTable.css';   
 import ProfileInfo from '../Component/ProfileSection';
+import AccountFrorm from '../Component/ProfileSection';
    
 const ProfileP = () => {    
     return ( <>    
@@ -16,7 +17,7 @@ const ProfileP = () => {
     <img src={profilepic} alt="graphic designer" />
     
     
-    <ProfileInfo/>
+    <AccountFrorm/>
 
 </section>
     

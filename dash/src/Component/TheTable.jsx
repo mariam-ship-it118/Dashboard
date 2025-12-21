@@ -1,16 +1,17 @@
+
 import React, { useEffect, useState } from 'react';
 import {supabase} from '../Supabase';
 
 
    
-const ProjectsTable = () => {
+const Messages = () => {
 const [loading, setLoading] = useState(true);
-const[projects, setProjects] = useState("");
+const[info, setInfo] = useState("");
  useEffect(() => {
     
      async function getAllProjectsAPI() {
          const res = await supabase.from("ProjectsDetails").select("*");
-         setProjects(res.data);   
+         setInfo(res.data);   
          setLoading(false);  
         console.log(res);
         
@@ -22,36 +23,38 @@ const[projects, setProjects] = useState("");
 
  if (loading) return <p>Loading...</p>;   
     return ( <>   
+      <table class="projects-table">
     
+    <thead>
+  
+    <tr>
+      <th>Project Name</th>
+      <th>Category</th>
+      <th>Status</th>
+      <th>Tools used</th>
+      <th>Type</th>
+     
+    </tr>
+  
+    </thead>
+  
+    <tbody>
     
-    { projects.map((project)=>{
-       return  <table class="projects-table">
-  <thead>
-
-  <tr>
-    <th>Project</th>
-    <th>Category</th>
-    <th>Status</th>
-    <th>Tool</th>
+    { info.map((info)=>{
+       return <tr>
+        
+    <td>{info.Project_Name}</td>
+    <td>{info.Category}</td>
+    <td>{info.Status}</td>
+    <td>{info.Tools_used}</td>
+    <td>{info.Type}</td>
+   
   </tr>
-
-  </thead>
-
-  <tbody>
-
-  <tr>
-    <td>{project.Project_Name}</td>
-    <td>{project.Category}</td>
-    <td>{project.Status}</td>
-    <td>{project.Type}</td>
-    <td>{project.tools_used}</td>
-  </tr>
+  } ) }
 
   </tbody>
-    
+ 
 </table>
-  
-    }) }
     
    
     
@@ -65,5 +68,7 @@ const[projects, setProjects] = useState("");
     
     </> );
 }
+
+
  
-export default ProjectsTable;
+export default Messages;

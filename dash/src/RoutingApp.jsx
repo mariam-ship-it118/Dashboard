@@ -8,6 +8,8 @@ import ProjectsPage from './Pages/ProjectsPage';
 import ProfileP from './Pages/Profile';
 import SubMsgs from './Pages/SubMesgs';
 import MsgsPage from './Pages/Msgs';
+import AccountFrorm from './Component/ProfileSection';
+import ProjectsForm from './Component/ProjectsFrom';
 
 
 const RoutingApp = () => {
@@ -27,6 +29,8 @@ const RoutingApp = () => {
 <Route path='/dmsg' element={<SubMsgs/>} />
 
  <Route path='/messages' element={<MsgsPage/>} />
+<Route path='/projects-table/case-study' element={<ProjectsForm/>} />
+
 
         </Routes>
         

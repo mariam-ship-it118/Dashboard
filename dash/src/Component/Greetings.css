@@ -1,0 +1,9 @@
+.gree{
+    margin-left: 15%;
+}
+
+
+.flexato{
+    display: flex;
+    flex-direction: column;
+}
