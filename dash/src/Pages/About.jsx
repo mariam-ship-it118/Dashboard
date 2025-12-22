@@ -21,7 +21,7 @@ const AboutForm = () => {
     return ( <>
     
     <SideBar/>
-    <Greetings greet='Here is your case study' />
+    <Greetings greet='Here is your About' />
     <form action="" className='gotoleft' onSubmit={SaveData}>
   
 <div className='flexato ' >
