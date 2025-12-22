@@ -96,7 +96,8 @@ const AccountFrorm = () => {
           <label htmlFor="" >Phone Number</label>
           <input name="" id="" onChange={(v)=> {setPnb(v.target.value)}}/>
         <button className='btnacc' >Send</button>
-    </form>
+    </form> 
+    
     
     {/* <button onClick={()=>{console.log(title)}}>test</button> */}
     </> );
