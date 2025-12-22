@@ -31,9 +31,10 @@ const SideBar = () => {
             <h3>Projects</h3></li>  
          
 </Link>
-
+<Link to='/messages'>
             <li className='iconsbar'><img src={messages} alt="" />
             <h3>Messages</h3></li> 
+</Link>
            
 <Link to='/' >   
             <li className='iconsbar'><img src={logout} alt="" />
