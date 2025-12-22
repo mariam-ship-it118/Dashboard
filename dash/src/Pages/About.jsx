@@ -9,11 +9,7 @@ const AboutForm = () => {
         const [color, setColor] = useState("");
         const [Challenges, setChallenges] = useState("");
         const [problem, setProblem] = useState("");
-         const [imgcard, setImgCard] = useState("");
-        const [mockups, setMockups] = useState("");
-        const [wireframes, setWireframes] = useState("");
-        const [designframes, setDesignFrames] = useState("");
-
+      
          async function SaveData() {
                 const res= await supabase.from("about").insert({"about_pic":name, "me":color, "visual_design": Challenges,"hiring_visual_design": problem });
             }
@@ -46,9 +42,10 @@ const AboutForm = () => {
 <div className='flexato ' >
     <label htmlFor="">Hiring a visual designer</label>
      <textarea type="text" className='ninety' onChange={(v)=> {setProblem(v.target.value)}} />
-</div>
+</div>   
+        
 
-
+    
 
 
 <button className='addbtn'>Save</button>

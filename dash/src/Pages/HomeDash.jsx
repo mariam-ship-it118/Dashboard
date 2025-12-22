@@ -22,8 +22,8 @@ const HomeDash = () => {
 </section>
 
   <section className='card-two'>
-    <h3 className='cards-titles'>CV</h3>
     <section className='btn-div'>
+    <h3 className='cards-titles'>CV</h3>
         <button className='card-btn'>Upload</button>
        <button className='card-btn'>Download</button>
     </section>
@@ -31,8 +31,8 @@ const HomeDash = () => {
 
 
 </section>
-
- 
+     
+     
  <section className='income'>
    <h3 className='cards-titles'>Monthly income</h3>
 
@@ -51,7 +51,7 @@ const HomeDash = () => {
   <div className='diza'>
     <h3 className='cards-titles'> Add Skills</h3>
   <img src={adding} alt="visual designer" />
-
+  
   </div>
 <ul className='fsp'>
 
