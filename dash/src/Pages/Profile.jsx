@@ -8,14 +8,14 @@ import ProfileInfo from '../Component/ProfileSection';
 import AccountFrorm from '../Component/ProfileSection';
    
 const ProfileP = () => {    
-    return ( <>    
-    
+    return ( <>        
+           
 <SideBar/>
 
-
-<section className='gotoleft'>
-    <img src={profilepic} alt="graphic designer" />
-    
+        
+<section className='gotoleft   '>
+    <img src={profilepic} alt="graphic designer" organize />
+         
     
     <AccountFrorm/>
 
@@ -24,5 +24,11 @@ const ProfileP = () => {
     
     </> );
 }
- 
+    
+
+
+
 export default ProfileP ;
+
+
+

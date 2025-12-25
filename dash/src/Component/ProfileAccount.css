@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 50%;
     margin-top: 2%;
+    
 }
 
 .btnacc{
@@ -12,4 +13,26 @@
     font-family:poppins ;
     border: transparent;
     padding: 1%;
+    margin-top: 4%;
+    border-radius: 0.5rem;
+}
+
+.textboxes{
+   
+    border-radius: 0.5rem;
+    width: 60%;
+    background-color: transparent;
+
+}
+
+
+
+.spacing{
+    padding-top: 3%;
+}
+
+
+.tt{
+    margin-left: 35%;
+    border: #570D1B solid 2px;
 }

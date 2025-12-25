@@ -13,7 +13,7 @@ const LoginMain = () => {
         <section className='bglogin'>
         <LoginTitle />
        <img src={mepeek} alt="" className='me' />
-        
+                 
         <section className='textboxes'>
         <TextBoxLogin cause='email' />
          <TextBoxLogin cause='pass' types='password' />

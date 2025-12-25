@@ -86,21 +86,34 @@ const AccountFrorm = () => {
     }
     return ( <>
     
-    <form action="" onSubmit={MakePass} className='formAccount'>
-        <label htmlFor="">Name</label>
-        <input type="text" onChange={(v)=> {setTitle(v.target.value)}} />
-        <label htmlFor="" >Email</label>
-        <input type="text" onChange={(v)=> {setEmail(v.target.value)}} />
+        <form action="" onSubmit={MakePass} className='formAccount'>
+        <section className='tectBposition'>    
+
+        <label htmlFor="" >Name</label>
+        <input type="text" onChange={(v)=> {setTitle(v.target.value)}} className='textboxes tt' />
+        </section>
+        <section className='spacing' >  
+
+        <label htmlFor="" className='spacing  ' >Email</label>
+        <input type="text" onChange={(v)=> {setEmail(v.target.value)}} className='textboxes tt' />
+        </section>
+        <section className=' spacing'>
         <label htmlFor="" >Password</label>
-        <input name="" id="" onChange={(v)=> {setPass(v.target.value)}}/>
+        <input name="" id="" onChange={(v)=> {setPass(v.target.value)}} className='textboxes tt' />
+
+        </section>
+        <section className=' spacing'>
+
           <label htmlFor="" >Phone Number</label>
-          <input name="" id="" onChange={(v)=> {setPnb(v.target.value)}}/>
+          <input name="" id="" onChange={(v)=> {setPnb(v.target.value)}} className='textboxes tt' />
+        </section>
         <button className='btnacc' >Send</button>
     </form> 
     
     
     {/* <button onClick={()=>{console.log(title)}}>test</button> */}
     </> );
+    
 }
  
 export default AccountFrorm;

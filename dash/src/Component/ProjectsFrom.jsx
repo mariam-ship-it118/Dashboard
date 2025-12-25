@@ -24,7 +24,7 @@ const ProjectsForm = () => {
     <SideBar />
     <Greetings greet='Here is your case study' />
     <form action="" className='gotoleft' onSubmit={SaveData}>
-  
+    
 <div className='flexato ' >
     <label htmlFor="">Project Name</label>
      <input type="text" className='ninety' onChange={(v)=> {setName(v.target.value)}} />
@@ -35,14 +35,14 @@ const ProjectsForm = () => {
     <label htmlFor="">Color Palette</label>
      <input type="text" className='ninety' onChange={(v)=> {setColor(v.target.value)}} />
 </div>
-
-   
+        
+     
      
 <div className='flexato ' >
     <label htmlFor="">Challenges</label>
      <textarea type="text" className='ninety' onChange={(v)=> {setChallenges(v.target.value)}} />
-</div>
-
+</div> 
+      
      
 <div className='flexato ' >
     <label htmlFor="">Problem Statement</label>
@@ -55,8 +55,9 @@ const ProjectsForm = () => {
 <div className='flexato ' >
     <label htmlFor="">Card Image</label>
      <textarea type="text" className='ninety' onChange={(v)=> {setImgCard(v.target.value)}} />
-</div>
-
+</div>   
+        
+    
 
      
 <div className='flexato ' >
